@@ -1,0 +1,26 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "start-dev": "nodemon src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongo": "^0.1.0",
+    "mongodb": "^3.7.4",
+    "mongoose": "^5.13.13",
+    "pg": "^8.11.5",
+    "redis": "^4.6.14"
+  },
+  "devDependencies": {
+    "bson": "4.0.4",
+    "nodemon": "^3.1.1"
+  },
+  "keywords": [],
+  "description": ""
+}
