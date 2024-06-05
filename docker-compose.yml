@@ -2,6 +2,7 @@ version: '3'
 services:
   node-app:
     container_name: exp-node-app-container
+    image: khalil527/pro1docker
     volumes:
        - ./src:/app/src:ro
     ports:
