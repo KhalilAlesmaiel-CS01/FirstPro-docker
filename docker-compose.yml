@@ -12,7 +12,7 @@ services:
     command: npm run start-dev
     depends_on:
        - redis
-       -  mongo
+       - mongo
  # postgres:
    # image: postgres
    # restart: always
