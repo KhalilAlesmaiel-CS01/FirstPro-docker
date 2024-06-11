@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const redis = require('redis');
 const { Client } = require('pg');
+const os = require('os');
 // Initialize app
 const PORT = process.env.PORT || 4000;
 const app = express();
@@ -43,7 +44,8 @@ mongoose
 
 app.get('/', (req, res) => {
   redisClient.set('products','products ...');
-  res.send('<h1>Hello Khalil From AWS , using docker hub test 1!</h1>');
+  console.log(`traffic from ${os.hostname}`);
+  res.send('<h1>Hello Khalil From AWS , using docker hub test 1& with watchtower!</h1>');
 });
 
 app.get('/data', async (req, res) => {
